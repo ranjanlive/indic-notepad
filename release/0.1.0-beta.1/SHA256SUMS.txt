@@ -1,0 +1,7 @@
+fa298b0105dddc191eed102cc04c7a9db9841c7056c972456ce58751a98e2daa  builds/windows/indic-notepad-0.1.0-beta.1-windows-x64-portable.zip
+74a00a7fb219cc0a03d8f90abd4653c73e01ab844deb28737315a7bd74f8b5a7  builds/windows/indic-notepad-0.1.0-beta.1-windows-x64-setup.exe
+90d2ff4ac518d43a13ae989fa2df308f0aed1fc0900b813391416b04ba1c29bd  metadata.json
+295c42f0b4f465a890596632fd72d871c046f520ffd6e13011a3c6171c6e04ce  privacy_content.json
+839b3a5eac35052e318dc730c65e2b3caabf3e45ad393ff63cdc01b5cfabeef3  release.json
+e8cbbdfef4f2e23940e33e6a9474c21f1ca0d43f838644b2543ecdd7a9bcc3a6  source-manifest.json
+60ea971a499100ebee3bf0c2e838336e7c14ba6784180a19198fe766bb7f42f2  store-listing.json

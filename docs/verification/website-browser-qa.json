@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "All 61 normal routes return HTML with a heading, canonical and working initial images",
+    "Unknown routes return a real HTTP 404 from the static server",
+    "13 representative routes fit 320, 390, 650, 768, 1024 and 1440px without document overflow",
+    "New cohesive illustration loads without mockup overlays; three real collection links work",
+    "All three original category illustrations load and display",
+    "Catalog search is accurate, shareable and survives reload",
+    "Empty/reset state, category/platform filters, sorting and keyboard search work",
+    "Screenshot lightbox supports next/previous, Escape, focus restoration and image cleanup",
+    "Preview has one real CDN download action, expandable checksum and clear preview status",
+    "No fabricated store button; product privacy route works",
+    "LaunchKit has three native platform download groups, real source/checksum links and a working desktop gallery",
+    "NotePad has two real Windows beta downloads/checksums, native captures, source and accurate scope labels",
+    "Mobile menu handles navigation, Tab order, Escape and focus",
+    "Reduced motion honored; no website cookies or local storage created",
+    "Without JavaScript, catalog/product content, mobile nav and screenshot image links work",
+    "Nested GitHub Pages project path serves navigation, product assets, policy links and canonicals",
+    "No JavaScript exceptions or failed resource requests during QA"
+  ],
+  "browser_errors": [],
+  "failed_requests": [],
+  "owned_browser_closed_on_exit": true,
+  "owned_servers_closed_on_exit": true
+}

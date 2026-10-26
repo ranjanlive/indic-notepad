@@ -1,0 +1,39 @@
+{
+  "$schema": "../../docs/schemas/release.schema.json",
+  "schema_version": 1,
+  "release_id": "0.1.0-beta.1",
+  "product": "indic-notepad",
+  "channel": "beta",
+  "version_name": "0.1.0",
+  "version_code": null,
+  "package_name": null,
+  "created": "2026-10-26T04:14:12.134338+00:00",
+  "source": {
+    "tree_sha256": "3e0d47c5b524e2a47624ecbda05775a58bad14842dd66308bd6056eb85186c50",
+    "git_commit": "36484de0ebc70d5b396584fad8c88f5e83fca777",
+    "manifest": "source-manifest.json"
+  },
+  "artifacts": [
+    {
+      "file": "builds/windows/indic-notepad-0.1.0-beta.1-windows-x64-portable.zip",
+      "kind": "archive",
+      "bytes": 840591,
+      "sha256": "fa298b0105dddc191eed102cc04c7a9db9841c7056c972456ce58751a98e2daa",
+      "signing_status": "not-verified"
+    },
+    {
+      "file": "builds/windows/indic-notepad-0.1.0-beta.1-windows-x64-setup.exe",
+      "kind": "installer",
+      "bytes": 765382,
+      "sha256": "74a00a7fb219cc0a03d8f90abd4653c73e01ab844deb28737315a7bd74f8b5a7",
+      "signing_status": "not-verified"
+    }
+  ],
+  "metadata": "metadata.json",
+  "privacy_content": "privacy_content.json",
+  "published": false,
+  "notes": [
+    "Local staged build; not a public store release. Debug APK certificates have not been verified by this staging command.",
+    "Native Windows x64 unsigned beta. Both public GitHub downloads were anonymously verified against actual binary sizes/SHA-256. Source tag 36484de; application build inputs at 1b46beb are unchanged in that tag. Public prerelease: https://github.com/ranjanlive/indic-notepad/releases/tag/v0.1.0-beta.1 . The staging published=false flag is not a production/store certification; actual GitHub evidence is docs/verification/published-release.json."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "tool": "MSVC dumpbin /DEPENDENTS",
+  "dependencies": [
+    "COMCTL32.dll",
+    "COMDLG32.dll",
+    "SHELL32.dll",
+    "dwmapi.dll",
+    "UxTheme.dll",
+    "bcrypt.dll",
+    "USER32.dll",
+    "GDI32.dll",
+    "IMM32.dll",
+    "ole32.dll",
+    "OLEAUT32.dll",
+    "ADVAPI32.dll",
+    "KERNEL32.dll",
+    "api-ms-win-core-synch-l1-2-0.dll"
+  ],
+  "no_separate_vc_runtime_imports": true,
+  "no_browser_runtime_imports": true,
+  "scope": "PE import table. Windows editor/reading/render components are OS DLLs; dynamic RichEdit/DirectWrite loads are documented in source."
+}

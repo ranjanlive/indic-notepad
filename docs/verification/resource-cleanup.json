@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-26",
+  "checked_utc": "2026-10-26T04:21:20.9043703+00:00",
+  "single_host_snapshot": true,
+  "owned_identity_checks": [
+    {
+      "record": "owned-ui-test.json",
+      "pid": 28372,
+      "owned_identity_alive": false,
+      "pid_now_exists": false,
+      "creation_time_matches": false,
+      "executable_matches": false
+    },
+    {
+      "record": "owned-visual-app.json",
+      "pid": 14984,
+      "owned_identity_alive": false,
+      "pid_now_exists": false,
+      "creation_time_matches": false,
+      "executable_matches": false
+    },
+    {
+      "record": "owned-final-preview.json",
+      "pid": 12540,
+      "owned_identity_alive": false,
+      "pid_now_exists": false,
+      "creation_time_matches": false,
+      "executable_matches": false
+    }
+  ],
+  "product_processes_remaining": [],
+  "owned_apps_cleaned": true,
+  "shared_caches_preserved": true,
+  "unrelated_apps_and_services_untouched": true,
+  "browser_cleanup_evidence": "Existing website QA report verifies owned browser/context and local server teardown in finally."
+}

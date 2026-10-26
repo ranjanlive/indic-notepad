@@ -1,0 +1,33 @@
+{
+  "published": true,
+  "version": "0.1.0-beta.1",
+  "website_commit": "0138af46e3d98d884005a4d45bcdc706699a911b",
+  "deployment": "https://github.com/ranjanlive/indicstudio.com/actions/runs/40268553196",
+  "checks": [
+    {
+      "url": "https://indicstudio.com/tools/indic-notepad/",
+      "status": 200
+    },
+    {
+      "url": "https://indicstudio.com/tools/indic-notepad/privacy/",
+      "status": 200
+    },
+    {
+      "url": "https://indicstudio.com/tools/indic-notepad/metadata.json",
+      "status": 200
+    },
+    {
+      "url": "https://indicstudio.com/tools/",
+      "status": 200
+    },
+    {
+      "url": "https://indicstudio.com/sitemap.xml",
+      "status": 200
+    }
+  ],
+  "live_platform_metadata_and_hashes_match": true,
+  "structured_data_present": true,
+  "catalog_and_sitemap_include_product": true,
+  "browser_qa_checks": 17,
+  "native_ci": "https://github.com/ranjanlive/indic-notepad/actions/runs/40267885460"
+}

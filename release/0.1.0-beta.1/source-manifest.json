@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "tree_sha256": "3e0d47c5b524e2a47624ecbda05775a58bad14842dd66308bd6056eb85186c50",
+  "files": [
+    {
+      "file": ".clang-format",
+      "sha256": "4a963e47fc6fcbbe22e54af572ef73880e1028686a8ebf6d84bd47d8e773e7c5",
+      "bytes": 219
+    },
+    {
+      "file": "app/main.cpp",
+      "sha256": "c9515f85892fadc09460bd40b8890f598de0afa0105e4a6cb9eeae7c998381e8",
+      "bytes": 122046
+    },
+    {
+      "file": "CMakeLists.txt",
+      "sha256": "b23f25604aa7d3d4a12b5ab360fba0d69a89fb3ef83b813940f37416ef92cb44",
+      "bytes": 4444
+    },
+    {
+      "file": "core/core.cpp",
+      "sha256": "05c47d039e6652135709ccb4f11dfb502e3a7f3d4465483839b6fb0f666a4670",
+      "bytes": 18967
+    },
+    {
+      "file": "core/core.h",
+      "sha256": "8e2f9dc3118ccfacefa2a12f1b4579857fa66d82ebfb1ec11c6db1f982275324",
+      "bytes": 3066
+    },
+    {
+      "file": "core/search.cpp",
+      "sha256": "d57695e63753820dc302b860f460a44d6fc170bfc032204158b61729245f47ee",
+      "bytes": 4901
+    },
+    {
+      "file": "editor/lexers.cpp",
+      "sha256": "b539e47940129b529749f9d81c8a6644a298ee2fe9350fc8c76c2e9327b39fc4",
+      "bytes": 607
+    },
+    {
+      "file": "README.md",
+      "sha256": "aa5bb75f66c93394f8cc086a3242df50254f8b82e43f0727a483e5f87beab4a7",
+      "bytes": 400
+    },
+    {
+      "file": "resources/app.manifest",
+      "sha256": "47565f2b04e61eb8387b1a7741bd5fd87f6ef4355e2f4907bd9202262b45b6f7",
+      "bytes": 1193
+    },
+    {
+      "file": "resources/app.rc",
+      "sha256": "fdf464e5f96f0e384f924ae9f3edce11851b126eaa936dc17466da10f7749e6a",
+      "bytes": 613
+    },
+    {
+      "file": "tests/core_tests.cpp",
+      "sha256": "4cbfc2005365090ffe1dee8fa83ce7c4652da383ec06a49299e0090284c7b123",
+      "bytes": 7558
+    }
+  ]
+}

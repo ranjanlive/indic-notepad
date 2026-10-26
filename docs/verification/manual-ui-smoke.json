@@ -1,7 +1,7 @@
 {
   "passed": true,
   "date": "2026-10-26",
-  "method": "Computer Use skill, actual packaged portable Windows app and an isolated owned profile; synthetic documents only.",
+  "method": "Computer Use skill in two stages: built native preview for typed Unicode and Save As; final packaged portable app for visual layouts, palette, focus mode and portable profile. Isolated owned profiles and synthetic documents only.",
   "checks": [
     "Dark and light layouts visually inspected",
     "Native Ctrl+F query selected the expected text and match count",

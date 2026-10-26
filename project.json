@@ -24,7 +24,7 @@
     "privacy_content": "docs/website/privacy_content.json"
   },
   "lifecycle": "beta",
-  "current_release": null,
+  "current_release": "0.1.0-beta.1",
   "origin": null,
   "created": "2026-10-26"
 }

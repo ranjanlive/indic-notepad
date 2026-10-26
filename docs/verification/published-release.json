@@ -1,0 +1,29 @@
+{
+  "published": true,
+  "channel": "GitHub public prerelease; not a Microsoft Store/production certification",
+  "url": "https://github.com/ranjanlive/indic-notepad/releases/tag/v0.1.0-beta.1",
+  "tag": "v0.1.0-beta.1",
+  "prerelease": true,
+  "asset_count": 8,
+  "download_checks": [
+    {
+      "url": "https://github.com/ranjanlive/indic-notepad/releases/download/v0.1.0-beta.1/indic-notepad-0.1.0-beta.1-windows-x64-portable.zip",
+      "http_status": 200,
+      "bytes": 840591,
+      "sha256": "fa298b0105dddc191eed102cc04c7a9db9841c7056c972456ce58751a98e2daa",
+      "matches_website_metadata": true,
+      "matches_release_size": true
+    },
+    {
+      "url": "https://github.com/ranjanlive/indic-notepad/releases/download/v0.1.0-beta.1/indic-notepad-0.1.0-beta.1-windows-x64-setup.exe",
+      "http_status": 200,
+      "bytes": 765382,
+      "sha256": "74a00a7fb219cc0a03d8f90abd4653c73e01ab844deb28737315a7bd74f8b5a7",
+      "matches_website_metadata": true,
+      "matches_release_size": true
+    }
+  ],
+  "app_source_commit": "1b46beb",
+  "release_tag_commit": "36484de0ebc70d5b396584fad8c88f5e83fca777",
+  "app_sources_unchanged_since_build": true
+}

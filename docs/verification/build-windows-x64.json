@@ -38,6 +38,9 @@
     "native_ui_check_count": 19,
     "local_installer_check_count": 9,
     "clean_windows_10_11_machines_tested": false,
-    "signature": "not configured; unsigned beta"
-  }
+    "signature": "not configured; unsigned beta",
+    "release_tag_native_ci": "https://github.com/ranjanlive/indic-notepad/actions/runs/40267885460",
+    "release_tag_metadata_ci": "https://github.com/ranjanlive/indic-notepad/actions/runs/40267885445"
+  },
+  "published_release_evidence": "published-release.json"
 }

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "release_id": "0.1.0-beta.1",
+  "manifest": "0.1.0-beta.1/release.json",
+  "channel": "beta",
+  "published": false
+}
