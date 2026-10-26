@@ -1,5 +1,22 @@
 {
-  "status": "draft",
+  "status": "beta",
   "title": "Indic NotePad",
-  "notes": "Complete the real store listing after choosing a platform and implementing the product."
+  "tagline": "Your words, in focus.",
+  "short_description": "A native, offline Windows text editor for notes, Markdown and code. Useful tabs, careful Unicode files, bounded search and local recovery—without an embedded browser.",
+  "description": [
+    "A little space for your thoughts. Indic NotePad brings clear native Windows editing to everyday notes, configuration and source files, with a quiet dark or light interface and no application account or upload service.",
+    "Work across tabs, use familiar editing shortcuts, highlight common source formats and find exactly what you need with case, whole-word or bounded PCRE2 regex search. Replace All confirms its count and groups the edits into one undo action. Replacement text is literal, including in regex mode.",
+    "Read UTF-8 or BOM-marked UTF-16 LE/BE, preserve existing line endings, choose an output encoding and explicitly convert EOLs. Saving checks the original file identity and content fingerprint before writing/flushing a temporary sibling and replacing the original on supported local Windows filesystems.",
+    "Local recovery keeps separate snapshots of dirty buffers. Turn history/recovery features on or off, clear stored lists, use a portable profile, or keep your default Windows application-data profile. Recovery is plaintext local data, not encryption or a substitute for backups.",
+    "Open the optional folder explorer or simplified native Markdown reader when useful. Focus mode removes optional chrome; themes and the font picker help make the space your own. No web runtime, interpreters, language-server bundles or persistent service is required.",
+    "This unsigned Windows x64 beta is a scoped first release. Editing is limited to 32 MiB per file; oversized files offer only the first 4 MiB in a read-only preview. Full virtual large-file navigation, split editing, printing, folder search and diff are future work. Independent clean-machine Windows 10/11, full assistive-technology/IME/RTL and cold-start testing remain pending."
+  ],
+  "platforms": [
+    "windows-x64"
+  ],
+  "version": "0.1.0-beta.1",
+  "license": "MIT",
+  "availability": "Unsigned public GitHub beta; no Microsoft Store submission is claimed.",
+  "support": "support@indicstudio.com",
+  "privacy_url": "https://indicstudio.com/tools/indic-notepad/privacy/"
 }

@@ -1,0 +1,72 @@
+Start testing: Oct 26 04:06 Coordinated Universal Time
+----------------------------------------------------------
+1/1 Testing: document_safety
+1/1 Test: document_safety
+Command: "D:/a/indic-notepad/indic-notepad/source_code/build/notepad-core-tests.exe"
+Directory: D:/a/indic-notepad/indic-notepad/source_code/build
+"document_safety" start time: Oct 26 04:06 Coordinated Universal Time
+Output:
+----------------------------------------------------------
+PASS Unicode-BOM-byte-round-trip
+PASS Unicode-BOM-byte-round-trip
+PASS Unicode-BOM-byte-round-trip
+PASS Unicode-BOM-byte-round-trip
+PASS mixed-EOL-detection
+PASS mixed-EOL-explicit-conversion
+PASS SHA256-known-vector
+PASS invalid-UTF8-refused
+PASS binary-NUL-refused
+PASS unpaired-surrogate-refused
+PASS truncated-UTF16-refused
+PASS Unicode-Windows-filename
+PASS existing-save-as-needs-confirmation
+PASS rejected-save-preserves-original
+PASS external-modification-conflict
+PASS conflict-preserves-external-content
+PASS read-only-refused
+PASS hard-link-save-refused
+PASS failed-write-refused
+PASS failure-does-not-damage-other-files
+PASS recovery-integrity-round-trip
+PASS corrupt-recovery-refused-and-retained
+PASS corrupt-recovery-preserved
+PASS case-insensitive-whole-word
+PASS Indic-search
+PASS bounded-regex
+PASS literal-regex-replacement
+PASS invalid-pattern-refused
+PASS search-cancellation
+PASS catastrophic-regex-bounded
+PASS zero-length-Unicode-progress
+PASS 1GiB-edit-refused
+PASS 1GiB-bounded-read-only-prefix
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+PASS fuzz-valid-lossless-round-trip
+Completed 53 assertions.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"document_safety" end time: Oct 26 04:06 Coordinated Universal Time
+"document_safety" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 26 04:06 Coordinated Universal Time

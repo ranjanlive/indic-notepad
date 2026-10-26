@@ -1,15 +1,79 @@
 {
   "$schema": "../schemas/privacy.schema.json",
   "schema_version": 1,
-  "title": "Privacy policy for Indic NotePad",
+  "title": "Privacy notice for Indic NotePad",
   "effective_date": "2026-10-26",
-  "summary": "Draft privacy notice. Replace it with verified product-specific information.",
+  "summary": "Indic NotePad edits text locally. It has no application account, analytics, text-upload service or background cloud storage. Optional plaintext recovery and recent paths stay in your chosen local profile.",
   "sections": [
     {
-      "id": "data",
-      "title": "Information and permissions",
+      "id": "files",
+      "title": "Text you choose to open",
       "paragraphs": [
-        "Document actual collection, processing, permissions, sharing, third-party services, backups, retention and deletion before publication."
+        "Indic NotePad reads files you select through native dialogs, command-line paths, drag/drop or the optional folder explorer. Text is kept in local editing buffers. Supported Unicode encodings are validated; the application does not execute scripts, macros or opened content."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "saving",
+      "title": "Saving and temporary files",
+      "paragraphs": [
+        "Save writes/flushed a temporary sibling before replacing or committing the destination. File fingerprints include identity, size, modification time and a SHA-256 content checksum. Temporary files normally disappear on completion; a crash or filesystem failure may leave local temporary data. Original documents are not automatically timer-saved."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "profile",
+      "title": "Settings, history and recovery",
+      "paragraphs": [
+        "The default profile is %LOCALAPPDATA%\\IndicStudio\\IndicNotePad. Portable mode uses an adjacent data folder; --data-dir chooses another local profile. Settings include appearance and editor preferences. Optional recent history stores local file paths. The app uses a profile lock to prevent simultaneous state writers.",
+        "Recovery snapshots can contain unsaved text, document paths, encoding, cursor state and original-file fingerprints. They are stored locally in a checksummed, size-bounded file. This checksum detects corruption; it does not encrypt the data. Anyone with appropriate access to the profile or its backups may be able to read it."
+      ],
+      "bullets": [
+        "Recovery and clean-tab restoration are settings you control. Recovery restoration requires consent when dirty snapshots exist.",
+        "Clear recent file history removes the remembered list; disabling history stops persisting that list.",
+        "Disabling recovery stops new snapshots and retains existing ones until you separately confirm clearing or remove the profile.",
+        "A cancelled recovery prompt keeps previous buffers for later and pauses overwriting them during that session."
+      ]
+    },
+    {
+      "id": "network",
+      "title": "No application cloud or telemetry",
+      "paragraphs": [
+        "The app has no account system, advertising, analytics, remote fonts, text upload service or automatic update checks. Markdown reading uses native Windows text controls and does not load remote images, execute scripts or render arbitrary HTML.",
+        "The operating system, antivirus, shell file dialogs, cloud-synced filesystem providers and any backup software have independent behavior and policies. The application does not control them. The website, GitHub repository and release downloads are separate services with their own hosting/logging policies."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "retention",
+      "title": "Retention, deletion and uninstall",
+      "paragraphs": [
+        "You control original documents and the local profile. Save/discard/clear actions update recovery as described in the offline help; snapshots are not an archival backup. Uninstall removes the application and its own shortcut/registry record but retains documents, settings and recovery data.",
+        "To erase local recovery/settings completely, close all instances and remove the selected profile folder through your operating system. Consider copies retained by backups, synchronizers or other users. IndicStudio has no application server-side copy to erase."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "permissions",
+      "title": "Access and permissions",
+      "paragraphs": [
+        "The app runs with ordinary user privileges and accesses user-selected files and the local profile. It requests no camera, microphone, contacts or location permission. The per-user installer creates its application folder, one Start menu shortcut and an uninstall entry; it does not silently make itself the default editor or install a background service."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "scope",
+      "title": "Version and scope",
+      "paragraphs": [
+        "This notice describes 0.1.0-beta.1 for Windows x64. Future network/data-collection features require an updated notice. Development benchmarks/tests are separate from normal app use and use synthetic files and isolated local profiles."
+      ],
+      "bullets": []
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "paragraphs": [
+        "For product or privacy questions, contact support@indicstudio.com. Do not include private text, recovery files, credentials or personal documents in public GitHub issues."
       ],
       "bullets": []
     }

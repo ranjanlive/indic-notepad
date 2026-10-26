@@ -2,6 +2,18 @@ name: Native Windows build
 on:
   push:
     branches: [main]
+    paths:
+      - 'source_code/**'
+      - 'assets/icons/**'
+      - 'docs/HELP.md'
+      - 'LICENSE'
+      - 'THIRD_PARTY_NOTICES.md'
+      - 'scripts/build.py'
+      - 'scripts/run_ui_tests.py'
+      - 'scripts/package_native.py'
+      - 'scripts/installer.nsi'
+      - 'scripts/requirements.txt'
+      - '.github/workflows/native.yml'
   pull_request:
   workflow_dispatch:
 permissions:

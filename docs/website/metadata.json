@@ -4,36 +4,172 @@
   "slug": "indic-notepad",
   "type": "tools",
   "title": "Indic NotePad",
-  "tagline": "A new idea, taking shape.",
-  "short_description": "Draft product description. Replace with the actual purpose and intended users.",
+  "tagline": "Your words, in focus.",
+  "short_description": "A native, offline Windows text editor for notes, Markdown and code. Useful tabs, careful Unicode files, bounded search and local recovery—without an embedded browser.",
   "full_description": [
-    "Describe the implemented product and its real capabilities before publishing."
+    "A little space for your thoughts. Indic NotePad brings clear native Windows editing to everyday notes, configuration and source files, with a quiet dark or light interface and no application account or upload service.",
+    "Work across tabs, use familiar editing shortcuts, highlight common source formats and find exactly what you need with case, whole-word or bounded PCRE2 regex search. Replace All confirms its count and groups the edits into one undo action. Replacement text is literal, including in regex mode.",
+    "Read UTF-8 or BOM-marked UTF-16 LE/BE, preserve existing line endings, choose an output encoding and explicitly convert EOLs. Saving checks the original file identity and content fingerprint before writing/flushing a temporary sibling and replacing the original on supported local Windows filesystems.",
+    "Local recovery keeps separate snapshots of dirty buffers. Turn history/recovery features on or off, clear stored lists, use a portable profile, or keep your default Windows application-data profile. Recovery is plaintext local data, not encryption or a substitute for backups.",
+    "Open the optional folder explorer or simplified native Markdown reader when useful. Focus mode removes optional chrome; themes and the font picker help make the space your own. No web runtime, interpreters, language-server bundles or persistent service is required.",
+    "This unsigned Windows x64 beta is a scoped first release. Editing is limited to 32 MiB per file; oversized files offer only the first 4 MiB in a read-only preview. Full virtual large-file navigation, split editing, printing, folder search and diff are future work. Independent clean-machine Windows 10/11, full assistive-technology/IME/RTL and cold-start testing remain pending."
   ],
-  "status": "draft",
-  "category": "Utilities",
+  "status": "beta",
+  "category": "Productivity",
+  "tags": [
+    "Text editor",
+    "Windows",
+    "Native",
+    "Offline",
+    "Markdown",
+    "Open source"
+  ],
+  "accent": "#1362BE",
+  "tint": "#EAF3FF",
+  "icon_url": "assets/website/icon.webp",
+  "social_image_url": "assets/website/social-card.png",
+  "version": "0.1.0-beta.1",
   "platforms": [
     {
       "os": "windows",
-      "requirements": "Add actual tested OS and hardware requirements.",
-      "architectures": [],
-      "downloads": []
+      "requirements": "Windows 10/11 x64 target. Native Win32, static MSVC runtime; no WebView, Java or Python required to run. Unsigned beta. Tested on the recorded Windows 11 host and Windows 2025 CI; clean-machine Windows 10/11 coverage is pending.",
+      "architectures": [
+        "x64"
+      ],
+      "version": "0.1.0-beta.1",
+      "downloads": [
+        {
+          "label": "Download portable ZIP",
+          "url": "https://github.com/ranjanlive/indic-notepad/releases/download/v0.1.0-beta.1/indic-notepad-0.1.0-beta.1-windows-x64-portable.zip",
+          "size": "821 KiB",
+          "sha256": "fa298b0105dddc191eed102cc04c7a9db9841c7056c972456ce58751a98e2daa",
+          "architecture": "x64",
+          "format": "zip"
+        },
+        {
+          "label": "Download Windows installer",
+          "url": "https://github.com/ranjanlive/indic-notepad/releases/download/v0.1.0-beta.1/indic-notepad-0.1.0-beta.1-windows-x64-setup.exe",
+          "size": "747 KiB",
+          "sha256": "74a00a7fb219cc0a03d8f90abd4653c73e01ab844deb28737315a7bd74f8b5a7",
+          "architecture": "x64",
+          "format": "exe"
+        }
+      ]
     }
   ],
-  "icon_url": "/assets/brand/icon-512.png",
+  "source_code_url": "https://github.com/ranjanlive/indic-notepad",
+  "website_url": "https://github.com/ranjanlive/indic-notepad/releases/tag/v0.1.0-beta.1",
+  "support_email": "support@indicstudio.com",
+  "price": {
+    "amount": 0,
+    "currency": "INR",
+    "label": "Free · MIT open source"
+  },
   "features": [
     {
-      "title": "Implemented benefit",
-      "description": "Replace this with a real implemented feature."
+      "title": "A native space for notes and code",
+      "description": "C++20, Win32 and Scintilla, with tabs, undo/redo, common syntax modes, line numbers, wrap, zoom and keyboard shortcuts."
+    },
+    {
+      "title": "Careful Unicode file handling",
+      "description": "Strict UTF-8 and BOM-marked UTF-16 LE/BE, explicit save encoding/EOL controls and conflict-aware local replacement."
+    },
+    {
+      "title": "Find with clear boundaries",
+      "description": "Case, Unicode-aware whole word and PCRE2 regex, background cancellation and resource limits; confirmed literal replacement."
+    },
+    {
+      "title": "Local recovery, your control",
+      "description": "Debounced snapshots separate from original files, recovery consent, recent-file clearing and separate/portable profiles."
+    },
+    {
+      "title": "Choose your workspace",
+      "description": "Dark, light or system theme, focus mode, font selection, command palette, optional explorer and native Markdown reading pane."
+    },
+    {
+      "title": "Small distribution, honest scope",
+      "description": "Windows portable ZIP and per-user installer under 1 MiB each in this beta; no embedded browser or application service. Measured performance is published with its limits."
     }
   ],
   "screenshots_url": {
     "android_view": [],
     "tablet_view": [],
-    "desktop_view": []
+    "desktop_view": [
+      {
+        "url": "assets/website/dark-reading.webp",
+        "alt": "Indic NotePad actual Windows desktop: Write in focus, read alongside.",
+        "caption": "Write in focus, read alongside.",
+        "width": 1536,
+        "height": 816
+      },
+      {
+        "url": "assets/website/light-reading.webp",
+        "alt": "Indic NotePad actual Windows desktop: A clear light theme for everyday work.",
+        "caption": "A clear light theme for everyday work.",
+        "width": 1536,
+        "height": 816
+      },
+      {
+        "url": "assets/website/find-replace.webp",
+        "alt": "Indic NotePad actual Windows desktop: Find and replace with explicit search options.",
+        "caption": "Find and replace with explicit search options.",
+        "width": 1536,
+        "height": 816
+      },
+      {
+        "url": "assets/website/focus.webp",
+        "alt": "Indic NotePad actual Windows desktop: A quiet view that makes room for your words.",
+        "caption": "A quiet view that makes room for your words.",
+        "width": 1536,
+        "height": 816
+      }
+    ]
   },
-  "change_logs": [],
+  "change_logs": [
+    {
+      "version": "0.1.0-beta.1",
+      "date": "2026-10-26",
+      "title": "First native Windows beta",
+      "changes": [
+        "Multi-tab Unicode text editing with native Scintilla syntax modes.",
+        "Bounded search/replace, local recovery and conflict-aware file saving.",
+        "Dark/light/system themes, focus mode, command palette and optional native panes.",
+        "Windows x64 portable ZIP and per-user installer; MIT source and unsigned beta."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does it require a browser runtime or account?",
+      "answer": "No. The application is native C++/Win32 with Windows system controls and statically linked editor/search libraries. It has no application account, telemetry, cloud upload or background service."
+    },
+    {
+      "question": "Can it edit a 1 GB log?",
+      "answer": "No. Editable documents are limited to 32 MiB. Larger files may be opened as a clearly labeled read-only preview of the first 4 MiB. The full file is not loaded or searchable, and that preview cannot overwrite the original."
+    },
+    {
+      "question": "Are recovery buffers private?",
+      "answer": "They stay in the selected local profile, but are plaintext and can contain sensitive text and paths. Use the recovery/history controls and consider backups or synchronization affecting that folder. Uninstall retains personal recovery/settings."
+    },
+    {
+      "question": "Is this a stable, signed release?",
+      "answer": "It is an unsigned public beta. Native build and control tests, host package checks and limited user-input smoke are recorded. Clean Windows 10/11 installs, broader accessibility/IME/RTL and cold-start/typing benchmarks remain pending."
+    },
+    {
+      "question": "How small and fast is it?",
+      "answer": "The current Windows portable ZIP and installer are each under 1 MiB. Five warm, visible samples on the recorded host measured about 143 ms p50 to input-idle and 22 MiB private working set for one 10 KiB note. The report distinguishes working set/private bytes, actual idle CPU and unmeasured cold/typing performance."
+    },
+    {
+      "question": "Can I modify and redistribute it?",
+      "answer": "The application source is MIT licensed. Scintilla/Lexilla and PCRE2 retain their bundled notices. IndicStudio names and marks do not imply endorsement of modified distributions."
+    }
+  ],
+  "privacy_summary": "Local text processing with no application account, analytics or uploads. Optional local plaintext recovery and recent-file history are under your control.",
+  "release_note": "Unsigned Windows x64 beta. Full virtual large-file viewing, split editing and printing are deferred. Review the published tests/limits and SHA-256 values; do not treat warm host measurements as cold-start or clean-machine certification.",
   "updated": "2026-10-26",
   "seo": {
-    "noindex": true
+    "title": "Indic NotePad — Native Offline Text Editor for Windows",
+    "description": "Write notes, Markdown and code in a native Windows text editor. Tabs, syntax highlighting, bounded find/replace, local recovery and themes. Free MIT open-source beta.",
+    "noindex": false
   }
 }

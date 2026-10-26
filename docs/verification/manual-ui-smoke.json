@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "date": "2026-10-26",
+  "method": "Computer Use skill, actual packaged portable Windows app and an isolated owned profile; synthetic documents only.",
+  "checks": [
+    "Dark and light layouts visually inspected",
+    "Native Ctrl+F query selected the expected text and match count",
+    "Typed English and Devanagari text visibly",
+    "Real native Save As dialog saved a new QA text file",
+    "Saved UTF-8 bytes matched typed content; dirty indicator cleared",
+    "Packaged command palette populated, filtered and executed Light/Dark theme",
+    "F11 entered focus mode and Escape restored chrome",
+    "Actual portable marker used adjacent data profile; settings saved there",
+    "Four actual app captures saved for the product page",
+    "Owned packaged preview closed normally"
+  ],
+  "not_claimed": [
+    "Exhaustive screen-reader, keyboard focus, IME/RTL or complex-script shaping coverage",
+    "Save/Discard/Cancel failure matrix and every native picker/installer page",
+    "Split view, full virtual large files or all original proposed features"
+  ]
+}

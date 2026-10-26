@@ -10,7 +10,7 @@
     "owner": "ranjanlive",
     "name": "indic-notepad",
     "planned_url": "https://github.com/ranjanlive/indic-notepad",
-    "remote_verified": false
+    "remote_verified": true
   },
   "platforms": [
     "windows"
@@ -23,7 +23,7 @@
     "website_metadata": "docs/website/metadata.json",
     "privacy_content": "docs/website/privacy_content.json"
   },
-  "lifecycle": "draft",
+  "lifecycle": "beta",
   "current_release": null,
   "origin": null,
   "created": "2026-10-26"

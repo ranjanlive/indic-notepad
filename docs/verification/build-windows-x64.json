@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0-beta.1",
+  "artifacts": [
+    {
+      "file": "indic-notepad-0.1.0-beta.1-windows-x64-portable.zip",
+      "bytes": 840591,
+      "sha256": "fa298b0105dddc191eed102cc04c7a9db9841c7056c972456ce58751a98e2daa",
+      "platform": "windows",
+      "architecture": "x64",
+      "signing": "unsigned"
+    },
+    {
+      "file": "indic-notepad-0.1.0-beta.1-windows-x64-setup.exe",
+      "bytes": 765382,
+      "sha256": "74a00a7fb219cc0a03d8f90abd4653c73e01ab844deb28737315a7bd74f8b5a7",
+      "platform": "windows",
+      "architecture": "x64",
+      "signing": "unsigned"
+    }
+  ],
+  "runtime": "C++20 native Win32; static Scintilla, selected Lexilla lexers, PCRE2 and MSVC CRT; system DLLs only",
+  "executable": {
+    "bytes": 1824256,
+    "sha256": "8a8338c575fdfda4681767538a0b5868dc36c65feea91aef3a9d584346be3ec1"
+  },
+  "build_environment": {
+    "compiler": "MSVC 19.51.36256.0 x64",
+    "sdk": "10.0.26100.0",
+    "cmake": "4.3.1-msvc1",
+    "configuration": "Release, two Ninja workers, static MSVC runtime"
+  },
+  "application_source_commit": "1b46bebc3baf9672cfee1c84f421ec1d3e4cbb84",
+  "integration_harness_fix_commit": "1102f02",
+  "app_source_unchanged_by_harness_fix": true,
+  "verification": {
+    "native_ci": "https://github.com/ranjanlive/indic-notepad/actions/runs/40267145313",
+    "metadata_ci": "https://github.com/ranjanlive/indic-notepad/actions/runs/40267145397",
+    "native_ui_check_count": 19,
+    "local_installer_check_count": 9,
+    "clean_windows_10_11_machines_tested": false,
+    "signature": "not configured; unsigned beta"
+  }
+}

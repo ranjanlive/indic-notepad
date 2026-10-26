@@ -1,0 +1,99 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "Indic NotePad 0.1.0-beta.1 source dependencies",
+  "documentNamespace": "https://indicstudio.com/sbom/indic-notepad/0.1.0-beta.1",
+  "creationInfo": {
+    "creators": [
+      "Organization: IndicStudio",
+      "Tool: indic-notepad-sbom.py"
+    ],
+    "created": "2026-10-26T00:00:00Z"
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-IndicNotePad",
+      "name": "Indic NotePad",
+      "versionInfo": "0.1.0-beta.1",
+      "downloadLocation": "https://github.com/ranjanlive/indic-notepad",
+      "filesAnalyzed": false,
+      "licenseDeclared": "MIT",
+      "copyrightText": "Copyright 2026 IndicStudio"
+    },
+    {
+      "SPDXID": "SPDXRef-Scintilla",
+      "name": "Scintilla",
+      "versionInfo": "5.6.7",
+      "downloadLocation": "https://www.scintilla.org/scintilla567.zip",
+      "filesAnalyzed": false,
+      "licenseDeclared": "LicenseRef-Scintilla",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2309181e59e7da4659f890dbc128db7451ccd094748770e7be674b830494587c"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Lexilla",
+      "name": "Lexilla",
+      "versionInfo": "5.5.4",
+      "downloadLocation": "https://www.scintilla.org/lexilla554.zip",
+      "filesAnalyzed": false,
+      "licenseDeclared": "LicenseRef-Scintilla",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5e0a21356e4e2f19d6a38ecd1c8172d5a2b7b4542940568b023386080db90fe0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-PCRE2",
+      "name": "PCRE2",
+      "versionInfo": "10.49",
+      "downloadLocation": "https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.49/pcre2-10.49.zip",
+      "filesAnalyzed": false,
+      "licenseDeclared": "BSD-3-Clause WITH PCRE2-exception",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "40fa9173e167648fb872beaaeab667c8778eb37fabeefffa99a7753edb1a9479"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-IndicNotePad"
+    },
+    {
+      "spdxElementId": "SPDXRef-IndicNotePad",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Scintilla"
+    },
+    {
+      "spdxElementId": "SPDXRef-IndicNotePad",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Lexilla"
+    },
+    {
+      "spdxElementId": "SPDXRef-IndicNotePad",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-PCRE2"
+    }
+  ],
+  "hasExtractedLicensingInfos": [
+    {
+      "licenseId": "LicenseRef-Scintilla",
+      "extractedText": "License for Lexilla, Scintilla, and SciTE\n\nCopyright 1998-2021 by Neil Hodgson <neilh@scintilla.org>\n\nAll Rights Reserved\n\nPermission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies and that\nboth that copyright notice and this permission notice appear in\nsupporting documentation.\n\nNEIL HODGSON DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\nAND FITNESS, IN NO EVENT SHALL NEIL HODGSON BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE\nOR PERFORMANCE OF THIS SOFTWARE.",
+      "name": "Scintilla and Lexilla license",
+      "seeAlsos": [
+        "https://www.scintilla.org/License.txt"
+      ]
+    }
+  ]
+}
