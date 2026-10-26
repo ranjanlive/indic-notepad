@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "version": "0.1.0-beta.1",
+  "checks": [
+    "portable ZIP path/notice/marker presence",
+    "portable executable hash equals tested build",
+    "portable executable launches and closes normally",
+    "per-user silent install into fresh owned directory",
+    "installed executable hash equals tested build",
+    "installer omits portable marker",
+    "installed executable launches and closes normally",
+    "uninstall removes own executable/Start-menu shortcut/Beta registry identity",
+    "uninstall preserves an adjacent user-data sentinel"
+  ],
+  "limits": "Existing Windows host, silent installer flow; not clean Windows 10/11 machines or every interactive installer page. Portable marker profile behavior is separately verified in visible UI."
+}

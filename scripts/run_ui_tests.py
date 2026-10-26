@@ -3,6 +3,7 @@ from pathlib import Path
 import subprocess,sys,json,time,psutil
 ROOT=Path(__file__).resolve().parents[1]
 def main():
+    (ROOT/'local-work').mkdir(parents=True,exist_ok=True)
     test=ROOT/'local-work'/f'ui-smoke-{time.time_ns()}'
     exe=ROOT/'source_code/build/notepad-ui-tests.exe'
     process=subprocess.Popen([str(exe),'--smoke-test',str(test)])
@@ -17,5 +18,7 @@ def main():
     if report.exists():
         data=json.loads(report.read_text(encoding='utf-8'));print(json.dumps(data,indent=2));
         if code==0 and data['passed']:(ROOT/'docs/verification/native-ui-smoke.json').write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
+        elif code==0:raise RuntimeError('Native report did not pass')
+    elif code==0:raise RuntimeError('Native report was not written')
     if code:raise SystemExit(code)
 if __name__=='__main__':main()
