@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    "command-palette-populated",
+    "native-edit-and-dirty",
+    "native-undo",
+    "native-redo",
+    "atomic-save-from-editor",
+    "disk-matches-editor",
+    "tab-document-and-selection",
+    "native-replace",
+    "replace-undo",
+    "native-find-panel-to-worker-to-selection",
+    "native-replace-panel-to-buffer",
+    "dark-theme",
+    "light-theme",
+    "word-wrap-toggle",
+    "line-numbers-toggle",
+    "native-markdown-reading-pane",
+    "dirty-buffer-recovery-snapshot",
+    "fifty-small-tabs",
+    "tab-budget-enforced"
+  ],
+  "method": "Visible native test executable; real Scintilla controls and actual disk IO, no OS input simulation."
+}

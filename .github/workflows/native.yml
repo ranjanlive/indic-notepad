@@ -1,0 +1,33 @@
+name: Native Windows build
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: notepad-native-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  windows:
+    runs-on: windows-2025
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r scripts/requirements.txt
+      - name: Build x64 Release and core regression suite (two workers)
+        run: python scripts/build.py
+      - name: Native control integration tests
+        run: python scripts/run_ui_tests.py
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: windows-native-checks
+          path: |
+            docs/verification/native-ui-smoke.json
+            source_code/build/Testing/Temporary/LastTest.log
+          if-no-files-found: error
+          retention-days: 14

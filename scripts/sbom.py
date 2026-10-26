@@ -1,0 +1,11 @@
+"""Emit a small SPDX 2.3 dependency/source SBOM; not a vulnerability certification."""
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parents[1]
+def main():
+    deps=[('Scintilla','5.6.7','https://www.scintilla.org/scintilla567.zip','2309181e59e7da4659f890dbc128db7451ccd094748770e7be674b830494587c','LicenseRef-Scintilla'),('Lexilla','5.5.4','https://www.scintilla.org/lexilla554.zip','5e0a21356e4e2f19d6a38ecd1c8172d5a2b7b4542940568b023386080db90fe0','LicenseRef-Scintilla'),('PCRE2','10.49','https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.49/pcre2-10.49.zip','40fa9173e167648fb872beaaeab667c8778eb37fabeefffa99a7753edb1a9479','BSD-3-Clause WITH PCRE2-exception')]
+    packages=[{'SPDXID':'SPDXRef-IndicNotePad','name':'Indic NotePad','versionInfo':'0.1.0-beta.1','downloadLocation':'https://github.com/ranjanlive/indic-notepad','filesAnalyzed':False,'licenseDeclared':'MIT','copyrightText':'Copyright 2026 IndicStudio'}]
+    for name,version,url,sha,license in deps:packages.append({'SPDXID':'SPDXRef-'+name,'name':name,'versionInfo':version,'downloadLocation':url,'filesAnalyzed':False,'licenseDeclared':license,'checksums':[{'algorithm':'SHA256','checksumValue':sha}]})
+    data={'spdxVersion':'SPDX-2.3','dataLicense':'CC0-1.0','SPDXID':'SPDXRef-DOCUMENT','name':'Indic NotePad 0.1.0-beta.1 source dependencies','documentNamespace':'https://indicstudio.com/sbom/indic-notepad/0.1.0-beta.1','creationInfo':{'creators':['Organization: IndicStudio','Tool: indic-notepad-sbom.py'],'created':'2026-10-26T00:00:00Z'},'packages':packages,'relationships':[{'spdxElementId':'SPDXRef-DOCUMENT','relationshipType':'DESCRIBES','relatedSpdxElement':'SPDXRef-IndicNotePad'}]+[{'spdxElementId':'SPDXRef-IndicNotePad','relationshipType':'DEPENDS_ON','relatedSpdxElement':'SPDXRef-'+x[0]} for x in deps],'hasExtractedLicensingInfos':[{'licenseId':'LicenseRef-Scintilla','extractedText':(ROOT/'local-work/package-stage/licenses/Scintilla.txt').read_text(encoding='utf-8'),'name':'Scintilla and Lexilla license','seeAlsos':['https://www.scintilla.org/License.txt']}]}
+    (ROOT/'local-work/native/SBOM.spdx.json').write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
+if __name__=='__main__':main()

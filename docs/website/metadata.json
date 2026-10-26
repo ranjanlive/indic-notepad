@@ -1,0 +1,39 @@
+{
+  "$schema": "../schemas/product.schema.json",
+  "schema_version": 1,
+  "slug": "indic-notepad",
+  "type": "tools",
+  "title": "Indic NotePad",
+  "tagline": "A new idea, taking shape.",
+  "short_description": "Draft product description. Replace with the actual purpose and intended users.",
+  "full_description": [
+    "Describe the implemented product and its real capabilities before publishing."
+  ],
+  "status": "draft",
+  "category": "Utilities",
+  "platforms": [
+    {
+      "os": "windows",
+      "requirements": "Add actual tested OS and hardware requirements.",
+      "architectures": [],
+      "downloads": []
+    }
+  ],
+  "icon_url": "/assets/brand/icon-512.png",
+  "features": [
+    {
+      "title": "Implemented benefit",
+      "description": "Replace this with a real implemented feature."
+    }
+  ],
+  "screenshots_url": {
+    "android_view": [],
+    "tablet_view": [],
+    "desktop_view": []
+  },
+  "change_logs": [],
+  "updated": "2026-10-26",
+  "seo": {
+    "noindex": true
+  }
+}

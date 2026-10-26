@@ -1,0 +1,30 @@
+{
+  "$schema": "docs/schemas/project.schema.json",
+  "schema_version": 1,
+  "slug": "indic-notepad",
+  "title": "Indic NotePad",
+  "type": "tools",
+  "organization": "IndicStudio",
+  "package_name": null,
+  "repository": {
+    "owner": "ranjanlive",
+    "name": "indic-notepad",
+    "planned_url": "https://github.com/ranjanlive/indic-notepad",
+    "remote_verified": false
+  },
+  "platforms": [
+    "windows"
+  ],
+  "paths": {
+    "source_code": "source_code",
+    "assets": "assets",
+    "docs": "docs",
+    "release": "release",
+    "website_metadata": "docs/website/metadata.json",
+    "privacy_content": "docs/website/privacy_content.json"
+  },
+  "lifecycle": "draft",
+  "current_release": null,
+  "origin": null,
+  "created": "2026-10-26"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "release_id", "product", "channel", "version_name", "version_code", "source", "artifacts", "metadata", "privacy_content", "published"],
+  "properties": {
+    "$schema": {"type": "string"}, "schema_version": {"const": 1},
+    "release_id": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[a-z0-9.]+)?$"},
+    "product": {"type": "string"}, "channel": {"enum": ["preview", "beta", "production"]},
+    "version_name": {"type": "string"}, "version_code": {"type": ["integer", "null"], "minimum": 1},
+    "package_name": {"type": ["string", "null"]}, "created": {"type": "string", "format": "date-time"},
+    "source": {"type": "object", "additionalProperties": false, "required": ["tree_sha256", "git_commit", "manifest"], "properties": {"tree_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "git_commit": {"type": ["string", "null"]}, "manifest": {"type": "string"}}},
+    "artifacts": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["file", "kind", "bytes", "sha256", "signing_status"], "properties": {"file": {"type": "string"}, "kind": {"enum": ["debug-apk", "release-aab", "installer", "archive"]}, "bytes": {"type": "integer", "minimum": 1}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}, "signing_status": {"enum": ["debug-build-not-verified", "unsigned", "not-verified"]}}}},
+    "metadata": {"const": "metadata.json"}, "privacy_content": {"const": "privacy_content.json"},
+    "published": {"const": false}, "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

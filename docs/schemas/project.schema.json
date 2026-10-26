@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "slug",
+    "title",
+    "type",
+    "organization",
+    "repository",
+    "platforms",
+    "paths",
+    "lifecycle",
+    "current_release"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 2
+    },
+    "type": {
+      "enum": [
+        "apps",
+        "games",
+        "tools"
+      ]
+    },
+    "organization": {
+      "const": "IndicStudio"
+    },
+    "package_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "owner",
+        "name",
+        "planned_url",
+        "remote_verified"
+      ],
+      "properties": {
+        "owner": {
+          "const": "ranjanlive"
+        },
+        "name": {
+          "type": "string"
+        },
+        "planned_url": {
+          "type": "string",
+          "pattern": "^https://github.com/ranjanlive/"
+        },
+        "remote_verified": {
+          "type": "boolean"
+        }
+      }
+    },
+    "platforms": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "android",
+          "windows",
+          "linux",
+          "macos",
+          "web"
+        ]
+      }
+    },
+    "paths": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_code",
+        "assets",
+        "docs",
+        "release",
+        "website_metadata",
+        "privacy_content"
+      ],
+      "properties": {
+        "source_code": {
+          "const": "source_code"
+        },
+        "assets": {
+          "const": "assets"
+        },
+        "docs": {
+          "const": "docs"
+        },
+        "release": {
+          "const": "release"
+        },
+        "website_metadata": {
+          "const": "docs/website/metadata.json"
+        },
+        "privacy_content": {
+          "const": "docs/website/privacy_content.json"
+        }
+      }
+    },
+    "lifecycle": {
+      "enum": [
+        "draft",
+        "preview",
+        "beta",
+        "released",
+        "retired"
+      ]
+    },
+    "current_release": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[a-z0-9.]+)?$"
+    },
+    "origin": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# Example field names only. Copy to release/private/signing.properties and keep private.
+# The existing Gradle source is not automatically wired to this example. Configure signing deliberately.
+storeFile=
+keyAlias=
+storePassword=
+keyPassword=

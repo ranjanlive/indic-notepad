@@ -1,0 +1,92 @@
+{
+  "version": "0.1.0-beta.1",
+  "measured_date": "2026-10-26",
+  "method": "Warm, visible release binary; Popen to WaitForInputIdle; synthetic 10 KiB UTF-8 buffer, one tab, minimal UI. No OS/file caches purged. First-paint responsiveness proxy, not keystroke latency. Each isolated profile auto-exits normally.",
+  "hardware": {
+    "windows": "10.0.26300",
+    "architecture": "AMD64",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "logical_cpus": 12,
+    "physical_ram_bytes": 16890519552,
+    "system_dpi": 96,
+    "storage": "Not characterized by this harness; no SSD/cold-start claim.",
+    "antivirus": "Existing host protection unchanged; state not controlled."
+  },
+  "sample_count": 5,
+  "startup_p50_ms": 143.43,
+  "startup_p95_nearest_rank_ms": 231.87,
+  "samples": [
+    {
+      "sample": 1,
+      "startup_input_idle_ms": 231.87,
+      "working_set_bytes": 56147968,
+      "private_bytes": 39178240,
+      "private_working_set_bytes": 22818816,
+      "idle_cpu_percent_one_core": 2.4964,
+      "observed_inet_connections_at_sample": 0,
+      "child_processes_at_sample": 0,
+      "normal_exit": true,
+      "pid_identity_exited": true
+    },
+    {
+      "sample": 2,
+      "startup_input_idle_ms": 150.67,
+      "working_set_bytes": 56164352,
+      "private_bytes": 39165952,
+      "private_working_set_bytes": 22810624,
+      "idle_cpu_percent_one_core": 2.1844,
+      "observed_inet_connections_at_sample": 0,
+      "child_processes_at_sample": 0,
+      "normal_exit": true,
+      "pid_identity_exited": true
+    },
+    {
+      "sample": 3,
+      "startup_input_idle_ms": 142.97,
+      "working_set_bytes": 56131584,
+      "private_bytes": 39149568,
+      "private_working_set_bytes": 22790144,
+      "idle_cpu_percent_one_core": 2.496,
+      "observed_inet_connections_at_sample": 0,
+      "child_processes_at_sample": 0,
+      "normal_exit": true,
+      "pid_identity_exited": true
+    },
+    {
+      "sample": 4,
+      "startup_input_idle_ms": 143.43,
+      "working_set_bytes": 56135680,
+      "private_bytes": 39145472,
+      "private_working_set_bytes": 22794240,
+      "idle_cpu_percent_one_core": 1.872,
+      "observed_inet_connections_at_sample": 0,
+      "child_processes_at_sample": 0,
+      "normal_exit": true,
+      "pid_identity_exited": true
+    },
+    {
+      "sample": 5,
+      "startup_input_idle_ms": 141.45,
+      "working_set_bytes": 56119296,
+      "private_bytes": 39124992,
+      "private_working_set_bytes": 22773760,
+      "idle_cpu_percent_one_core": 4.992,
+      "observed_inet_connections_at_sample": 0,
+      "child_processes_at_sample": 0,
+      "normal_exit": true,
+      "pid_identity_exited": true
+    }
+  ],
+  "not_measured": [
+    "True cold launch after reboot/security scans",
+    "Typing latency and scrolling FPS",
+    "100/150/200 percent DPI matrix",
+    "Clean Windows 10 and 11 machines",
+    "Peak memory during large edits"
+  ],
+  "last_sample_native_loop": {
+    "main_paints": 2,
+    "scintilla_ui_updates": 2,
+    "app_timers": 1
+  }
+}
